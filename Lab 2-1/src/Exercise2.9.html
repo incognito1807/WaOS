@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Request</title>
+    </head>
+    <body>
+        <h1>Your information</h1>
+        <form action="Exercise.php" method="post">
+            <br>
+                Enter your name: <input type="text" size="50" maxlength="100" name="name">
+            <br><br>
+                What class are you in? <input type="text" size="16" maxlength="20" name="class">
+            <br><br>
+                What is your university? <input type="text" size="16" maxlength="20" name="university">
+            <br><br>
+            What is your hobby? <br>
+            <input type="checkbox" id="reading" name="hobby[]" value="reading">
+                <label for="reading">Reading book</label><br>
+            <input type="checkbox" id="listening" name="hobby[]" value="listening">
+                <label for="listening">Listening to music</label><br>
+            <input type="checkbox" id="camping" name="hobby[]" value="camping">
+                <label for="camping">Go camping</label><br>
+            <input type="checkbox" id="playing" name="hobby[]" value="playing">
+                <label for="camping">Playing games</label><br>
+            <br><br>
+                What is your desire?
+            <input type="text" size="100" maxlength="20" name="desire"> 
+            <br><br>
+            <input type="submit" value="Click to Submit">
+            <input type="reset" value="Erase and Restart">
+        </form>
+    </body>
+</html>
