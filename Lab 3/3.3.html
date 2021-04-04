@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type = "text/javascript">
+            num = 0;
+            // đếm số lần hàm được gọi
+            function myFunction() {
+                num++;
+                if(num == 1)
+                    document.myForm.outputField.value = "Called " + num + " time";
+                else 
+                    document.myForm.outputField.value = "Called " + num + " times";
+            }
+            window.setInterval("myFunction()", 1000);
+        </script>
+    </head>
+    <body>
+        <form name = "myForm">
+            <input type = "text" name = "outputField" readonly>
+        </form>
+    </body>
+</html>

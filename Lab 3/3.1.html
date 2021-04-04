@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script type = "text/javascript">
+            //tạo mảng
+            var myArray = new Array();
+            myArray.push("Tim");
+            myArray.push("Janice");
+            myArray.push("Joe");  
+            
+            // in mảng
+            document.writeln(myArray.toString());
+            document.writeln("<br>");
+            
+            // in phần tử đầu của mảng
+            document.writeln(myArray[1]);
+            document.writeln("<br>");  
+    
+            // in độ dài mảng
+            document.writeln("Array length: " + myArray.length);
+            document.writeln("<br>");
+    
+            // lấy phần tử cuối mảng
+            var who = myArray.pop();
+            document.writeln("Pop element: " + who);
+            document.writeln("<br>");
+
+            // in lại kích thước mảng
+            document.writeln("Array length: " + myArray.length);
+            document.writeln("<br>");
+            document.writeln("<br>");
+    
+            //* //
+            // tạo mảng rồi chèn phần tử khi khởi tạo mảng
+            var otherArray = new Array("dog", 3, 8.3);
+            document.writeln(otherArray.toString());
+            document.writeln("<br>");
+            document.writeln("<br>");
+    
+            // thiết lập liên kết mảng
+            otherArray["key"] = "value";
+            document.writeln(otherArray["key"]);
+            document.writeln("<br>");
+        </script>
+    </body>
+</html>
