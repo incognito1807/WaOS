@@ -2,24 +2,8 @@
 <html>
     <head>
         <link href="Ex 3.9.css" rel="stylesheet" type="text/css" media="all"/>
-        
-        <script>
-            function validateInput() {
-                var pass = document.getElementsById("Password");
-                var conf = document.getElementsById("RepeatPassword");
-
-                if (pass.value.length > 15 || pass.value.length < 6) {
-                    pass.setCustomValidity("Passwords ranges 6 to 15 characters!")
-                }
-
-                if(pass.value != conf.value) {
-                    conf.setCustomValidity("Passwords Don't Match!");
-                } else {
-                    conf.setCustomValidity("");
-                }
-            }
-            document.getElementsByName("commit")[0].onclick = validateInput;
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Ex 3.9.js"></script>
     </head>
     <body>
         <div class="d-flex justify-content-center">
@@ -28,7 +12,7 @@
                 <h2>Register Form</h2>
                 
                     <div class="form-sub-w3">
-                        <Form name="RegisterForm" method="post" action="abc.php">
+                        <Form name="RegisterForm">
                             <br>
                             <input type="text" size="60" name="Username" required placeholder="Username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"></input>
                             <br><br>
