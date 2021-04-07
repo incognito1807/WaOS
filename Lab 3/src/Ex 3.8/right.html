@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function WriteCookie() {
+                var title = escape(document.new_blog.title_blog.value);
+                var content = escape(document.new_blog.content.value);
+                var time = new Date().getTime;
+                localStorage.setItem("title",title);
+                localStorage.setItem("content",content);
+                localStorage.setItem("time", time);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="new_blog">
+            Tên blog: <br>
+            <input type="text" name="title_blog" required/>
+            <br><br>
+            Nội dung: <br>
+            <textarea cols="60" rows="20" type="text" name="content" required></textarea>
+            <br><br>
+            <input type="submit" value="Tạo blog" onclick="WriteCookie();"/>
+        </form>    
+    </body>
+</html>

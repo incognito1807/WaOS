@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="Ex 3.9.css" rel="stylesheet" type="text/css" media="all"/>
+        
+        <script>
+            function validateInput() {
+                var pass = document.getElementsById("Password");
+                var conf = document.getElementsById("RepeatPassword");
+
+                if (pass.value.length > 15 || pass.value.length < 6) {
+                    pass.setCustomValidity("Passwords ranges 6 to 15 characters!")
+                }
+
+                if(pass.value != conf.value) {
+                    conf.setCustomValidity("Passwords Don't Match!");
+                } else {
+                    conf.setCustomValidity("");
+                }
+            }
+            document.getElementsByName("commit")[0].onclick = validateInput;
+        </script>
+    </head>
+    <body>
+        <div class="d-flex justify-content-center">
+            <div class="main-agileits">
+                <div class="form-w3-agile">
+                <h2>Register Form</h2>
+                
+                    <div class="form-sub-w3">
+                        <Form name="RegisterForm" method="post" action="abc.php">
+                            <br>
+                            <input type="text" size="60" name="Username" required placeholder="Username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"></input>
+                            <br><br>
+                            <input type="text" size="60" name="Email" required pattern="[a-z0-29._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email"></input>
+                            <br><br>
+                            <input type="tel" size="60" name="Phone" required pattern="[0]{1}[1-9]{1}[0-9]{4}[0-9]{4}" placeholder="Phone number: 0123 456 789"></input>
+                            <br><br>
+                            <input type="password" size="60" id="Password" required placeholder="Password"></input>
+                            <br><br>
+                            <input type="password" size="60" id="RepeatPassword" required placeholder="Confirm Password"></input>
+                            <br>
+                            <input type="submit" value="Register" name="commit"></input>
+                        </Form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
