@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Colors Exercise</title>
+        <style>
+            td {
+                padding: 20px;
+            }
+        </style>
+        <script>
+            function changeRed() {
+                document.getElementById('red').style.color = 'rgb(255,0,0)';
+            }
+            function changeGreen() {
+                document.getElementById('green').style.color = 'rgb(0,255,0)';
+            }
+            function changeYellow() {
+                document.getElementById('yellow').style.color = 'rgb(237, 245, 0)';
+            }
+            function backBlack() {
+                document.getElementById('red').style.color = 'black';
+                document.getElementById('green').style.color = 'black';
+                document.getElementById('yellow').style.color = 'black';
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Di chuột qua dòng "màu..." để đổi màu dòng chữ bên dưới</h1>
+        <table>
+            <tr>
+                <td><a onmouseover = "changeRed()" onmouseout = "backBlack()">Màu đỏ</a></td>
+                <td><a onmouseover = "changeGreen()" onmouseout = "backBlack()">Màu xanh</a></td>
+                <td><a onmouseover = "changeYellow()" onmouseout = "backBlack()">Màu vàng</a></td>
+            </tr>
+            <tr>
+                <td id = "red">Chỗ này sẽ sang đỏ</td>
+                <td id = "green">Chỗ này sẽ sang xanh</td>
+                <td id = "yellow">Chỗ này sẽ sang vàng</td>
+            </tr>
+        </table>
+    </body>
+</html>
