@@ -8,7 +8,7 @@
                 if (localStorage.getItem("title") != null) {
                     time = new Date().getTime();
                     setuptime = localStorage.getItem("time");
-                    if (time - setuptime > 24 * 3600) {
+                    if (time - setuptime > 24 * 3600 * 1000) {
                         alert("Cookie is expired")
                     } else {
                         document.getElementById("title_blog").innerText = unescape(localStorage.getItem("title"));
