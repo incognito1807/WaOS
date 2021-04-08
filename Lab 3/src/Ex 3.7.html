@@ -6,37 +6,46 @@
             td {
                 padding: 20px;
             }
+            .color {
+                margin: auto;
+            }
+            #chang {
+                font-size: x-large;
+            }
         </style>
         <script>
             function changeRed() {
-                document.getElementById('red').style.color = 'rgb(255,0,0)';
+                document.getElementById('color').style.color = 'rgb(255,0,0)';
             }
             function changeGreen() {
-                document.getElementById('green').style.color = 'rgb(0,255,0)';
+                document.getElementById('color').style.color = 'rgb(0,255,0)';
             }
             function changeYellow() {
-                document.getElementById('yellow').style.color = 'rgb(237, 245, 0)';
+                document.getElementById('color').style.color = 'rgb(237, 245, 0)';
             }
             function backBlack() {
-                document.getElementById('red').style.color = 'black';
-                document.getElementById('green').style.color = 'black';
-                document.getElementById('yellow').style.color = 'black';
+                document.getElementById('color').style.color = 'black';
             }
         </script>
     </head>
     <body>
         <h3>Di chuột qua dòng "màu..." để đổi màu dòng chữ bên dưới</h1>
         <table>
-            <tr>
+            <tr class="change">
                 <td><a onmouseover = "changeRed()" onmouseout = "backBlack()">Màu đỏ</a></td>
                 <td><a onmouseover = "changeGreen()" onmouseout = "backBlack()">Màu xanh</a></td>
                 <td><a onmouseover = "changeYellow()" onmouseout = "backBlack()">Màu vàng</a></td>
             </tr>
-            <tr>
-                <td id = "red">Chỗ này sẽ sang đỏ</td>
-                <td id = "green">Chỗ này sẽ sang xanh</td>
-                <td id = "yellow">Chỗ này sẽ sang vàng</td>
-            </tr>
         </table>
+        
+        <p id = "color">Trong các môn thể thao, em thích nhất là môn cầu lông. 
+            Em được bố em dạy cho từ hồi nhỏ. 
+            Tính đến nay, em đã gắn bó với môn thể thao này được ba năm. 
+            Sau mỗi buổi tan học, em cùng bố hoặc bạn ra công viên để đánh cầu lông. 
+            Có những hôm chỉ đánh vui, cũng có những hôm chúng em tổ chức thi đấu, 
+            bạn nào thua sẽ phải mua nước giải khát cho người còn lại. Làm như vậy khiến 
+            cho buổi đánh thêm phần hấp dẫn và sôi động hơn. Do chăm chỉ chơi cầu lông nên 
+            sức khoẻ em ngày càng dẻo dai và khỏe mạnh.
+            Em cảm thấy đây là môn thể thao rất bổ ích.</p>
     </body>
 </html>
