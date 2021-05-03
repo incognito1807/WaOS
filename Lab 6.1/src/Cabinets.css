@@ -1,0 +1,17 @@
+h1{
+    text-align: center
+}
+p{
+    margin: 0.25in;
+    border: 0.25in solid black;
+    padding: 0.25 in;
+    background: URL(https://www.jing.fm/clipimg/full/166-1660430_brick-background-png-brick-wall-background-pattern-png.png)
+}
+body{
+    background: URL(https://giaynhat.net/wp-content/uploads/2018/10/TWP2204_item.jpg)
+}
+.banner{
+    background: url(http://taimocphat.com/sites/default/files/styles/zoom_450_450/public/soi_do_van_nui.jpg?itok=b0jsXt2_) repeat-x;
+    font-size: 50pt;
+    font-family: Arial Rounded MT Bold
+}
