@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--student.xml-->
+<student>
+    <name>Nguyen</name>
+    <ID>20183963</ID>
+    <email> nguyen.pa18@sis.hust.edu.vn </email>
+    <phone> 4940001 </phone>
+    <birthday>2000/01/01</birthday>
+    <address>Hoa Binh</address>
+    <school>HUST</school>
+    <branch>IT3</branch>
+    <class>IT3-01</class>
+    <cpa>2.0</cpa>
+</student>
